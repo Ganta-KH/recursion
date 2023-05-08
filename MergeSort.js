@@ -1,7 +1,7 @@
 function mergeSort(arr) {
     if (arr.length < 2) return arr;
 
-    const middle = Math.floor(arr.length / 2);
+    const middle = arr.length / 2;
 
     const left = mergeSort(arr.slice(0, middle));
     const right = mergeSort(arr.slice(middle, arr.length));
